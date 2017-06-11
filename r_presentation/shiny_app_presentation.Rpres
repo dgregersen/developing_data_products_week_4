@@ -1,0 +1,39 @@
+Drivers of MPG
+========================================================
+author: BlaBlaBla92
+date: 11 June 2017
+autosize: true
+
+Overview
+========================================================
+
+This presentation was built to describe the Shiny app asked to be developed in the course project for Developing Data products in Coursera's Data Science Specialisation.
+
+The demo of the app can be found here: https://blablabla92.shinyapps.io/shiny_app/
+
+The code repo can be found here: XXXXXX
+
+Functionality
+========================================================
+The application enables the user to select between
+- Carburetors
+- Transmission
+- Gears
+and then see the relationship between one of these and mpg.
+
+Data set
+========================================================
+The data set used to produce the app is the mtcars data set. Below is a summary of the source data set.
+
+```{r}
+summary(mtcars[,c('mpg','gear','carb','am')])
+```
+
+Example output
+========================================================
+The output of the app is a box plot (+ a scatterplot)
+```{r}
+data(mtcars)
+boxplot(mpg ~ gear, data = mtcars)
+```
+```
